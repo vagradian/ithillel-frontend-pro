@@ -12,10 +12,15 @@
 // Все це має бути відображено в одному вікні (алерті).
 // Якщо в якомусь випадку він не захоче вводити інформацію і натисне Скасувати, показати йому повідомлення –
 // “Шкода, що Ви не захотіли ввести свій(ю) …” і вказуємо, що він не захотів вводити – дату народження, місто чи вид спорту.
-function userInfo() {
-  let age = prompt('How old are you?');
-  let city = prompt('What city do you live in?');
-  let sport = prompt('What is your favorite sport?');
+
+const userInfo = {
+  age: prompt('How old are you?'),
+  city: prompt('What city do you live in?'),
+  sport: prompt('What is your favorite sport?')
+}
+
+function showUserInfo(user) {
+  let { city, age, sport } = user;
   const sorryMessage = "So sorry that you didn't want to enter your";
   let ageInfo = "";
   let cityInfo = "";
@@ -71,4 +76,4 @@ function userInfo() {
   );
 }
 
-userInfo();
+showUserInfo(userInfo);
