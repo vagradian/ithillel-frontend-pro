@@ -10,8 +10,8 @@ console.log(' number is Ba_NaN')
 } else {
 console.log('OK!')
 }*/
-let numOrStr = prompt('input number or string');
-console.log(numOrStr)
+const numOrStr = prompt('input number or string');
+console.log(numOrStr);
 
 switch (true) {
   case (numOrStr === null):
