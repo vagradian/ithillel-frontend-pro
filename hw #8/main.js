@@ -53,7 +53,7 @@
 // let sumOfEven = 0;
 //
 // for (let i = 30; i <= 80; i++) {
-//   if (i % 2 == 0) {
+//   if (i % 2 === 0) {
 //     sumOfEven += i;
 //   }
 // }
@@ -62,13 +62,13 @@
 
 // Вивести всі числа в діапазоні від 100 до 200 кратні 3.
 // for (let i = 100; i <= 200; i++) {
-//   if (i % 3 == 0) {
+//   if (i % 3 === 0) {
 //     console.log(i);
 //   }
 // }
 
 // Дано натуральне число. Знайти та вивести на сторінку всі його дільники.
-// let naturalNum = +prompt('Enter any natural number');
+// const naturalNum = +prompt('Enter any natural number');
 // let count = 0;
 //
 // for (let i = 2; i <= naturalNum; i++) {
@@ -78,7 +78,7 @@
 // }
 
 // Визначити кількість його парних дільників.
-// let naturalNum = +prompt('Enter any natural number');
+// const naturalNum = +prompt('Enter any natural number');
 // let count = 0;
 //
 // for (let i = 2; i <= naturalNum; i++) {
@@ -86,11 +86,11 @@
 //     count++;
 //   }
 // }
-
+//
 // console.log(`Number of even divisors: ${count}`);
 
 // Знайти суму його парних дільників.
-// let naturalNum = +prompt('Enter any natural number');
+// const naturalNum = +prompt('Enter any natural number');
 // let sumOfDivisors = 0;
 //
 // for (let i = 2; i <= naturalNum; i++) {
