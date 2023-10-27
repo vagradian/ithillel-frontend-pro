@@ -42,14 +42,14 @@ const numOfNegativeElements = negativeArray.length;
 console.log('number of negative elements', numOfNegativeElements);
 
 // Знайти кількість непарних позитивних елементів.
-const evenArray = [];
+const oddArray = [];
 array.forEach(element => {
   if (element > 0 && element % 2 !== 0) {
-    evenArray.push(element);
+    oddArray.push(element);
   }
 });
 
-const PositiveOddElements = evenArray.length;
+const PositiveOddElements = oddArray.length;
 
 console.log('number of odd positive elements', PositiveOddElements);
 
@@ -65,7 +65,7 @@ const sumOfPositiveEvenElements = positiveEvenElements.reduce((sum, element) => 
 console.log('sum of even positive elements', sumOfPositiveEvenElements);
 
 // Знайти суму непарних позитивних елементів.
-const sumOfPositiveOddElements = evenArray.reduce((sum, element) => sum + element, 0);
+const sumOfPositiveOddElements = oddArray.reduce((sum, element) => sum + element, 0);
 
 console.log('sum of odd positive elements', sumOfPositiveOddElements);
 
@@ -81,4 +81,4 @@ array.forEach((element, index) => {
   }
 });
 
-console.log("reset array:", array);
+console.log("reset array", array);
