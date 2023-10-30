@@ -10,8 +10,8 @@ console.log(array);
 
 const removeElement = (array, item) => {
   const indexOfItem = array.indexOf(item);
-  if (index !== -1) {
-    array.splice(index, 1);
+  if (indexOfItem !== -1) {
+    array.splice(indexOfItem, 1);
   }
 }
 
