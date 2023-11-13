@@ -22,6 +22,7 @@ class Apartment {
 
   addResident(resident) {
     this.residents.push(resident);
+    return this;
   }
 
   showResidents() {
@@ -38,9 +39,6 @@ class Apartment {
 // додати квартиру - метод повинен приймати екземпляр класу Квартира, перевіряти, чи не буде кількість перевищувати максимальну кількість квартир,
 // і якщо це так, додати квартиру, в іншому випадку виводить у консоль відповідне повідомлення.
 class Building {
-  apartments = [];
-  maxApartmentNumber = 0;
-
   constructor(maxApartmentNumber) {
     this.maxApartmentNumber = maxApartmentNumber;
     this.apartments = [];
@@ -75,10 +73,8 @@ const apartment3 = new Apartment();
 const apartment4 = new Apartment();
 
 // додадити екземпляри класу Людина до екземплярів класу Квартира;
-apartment1.addResident(person1);
-apartment1.addResident(person2);
-apartment2.addResident(person3);
-apartment2.addResident(person4);
+apartment1.addResident(person1).addResident(person2);
+apartment2.addResident(person3).addResident(person4);
 apartment3.addResident(person5);
 apartment4.addResident(person6);
 
