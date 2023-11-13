@@ -14,6 +14,8 @@ function createSum() {
 }
 
 const customSum = createSum();
+const customSum1 = createSum();
 
 console.log(customSum(3));
 console.log(customSum(5));
+console.log(customSum1(2));
