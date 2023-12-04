@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>homework #21</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		height: 100vh;
+		font-family: 'Open Sans', sans-serif;
+		background-image: url("https://i.redd.it/eo2hdnuqbzc51.png");
+	}
+
+	.main {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-top: 100px;
+		height: 100%;
+	}
+
+	h1 {
+		color: #ad0688;
+	}
+
+	ul {
+		display: flex;
+		list-style: none;
+		gap: 24px
+	}
+
+	li {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		color: #ad0688;
+		font-size: 24px;
+		font-weight: 600;
+		gap: 12px;
+	}
+
+	button {
+		font-size: 80px;
+		background: none;
+		outline: none;
+		border: 2px solid transparent;
+		border-radius: 10px;
+		cursor: pointer;
+
+		&:hover {
+			border-color: #ad0688;
+		}
+	}
+</style>
+<body>
+	<div class="main">
+		<h1>vote for your favorite emoji!</h1>
+		<ul>
+			<li class="happy"><button>🙂</button></li>
+			<li class="nothappy"><button>🫠</button></li>
+			<li class="inlove"><button >😍</button></li>
+			<li class="boredom"><button>🙄</button></li>
+			<li class="angry"><button>🤬</button></li>
+		</ul>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>

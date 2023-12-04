@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>homework #22</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+</head>
+<style>
+	body {
+		margin: 0;
+		padding: 0;
+		height: 100vh;
+		font-family: 'Open Sans', sans-serif;
+		background-image: url("https://i.redd.it/eo2hdnuqbzc51.png");
+	}
+
+	.main {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+
+	.action {
+		width: 200px;
+		height: 40px;
+		margin-bottom: 20px;
+		color: #ad0688;
+		font-size: 14px;
+		font-weight: bold;
+		background-color: rgba(232, 153, 199, 0.96);
+		border: 2px solid #ad0688;
+		border-radius: 8px;
+		cursor: pointer;
+	}
+
+	.image {
+		width: 700px;
+		border-radius: 8px;
+	}
+</style>
+<body>
+	<div class="main">
+		<button class="action">Show image</button>
+		<img class="image" />
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
