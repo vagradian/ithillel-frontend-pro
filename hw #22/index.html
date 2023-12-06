@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
-	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	      content="wclassth=device-wclassth, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>homework #22</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
@@ -19,13 +19,34 @@
 
 	.main {
 		display: flex;
-		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		padding-top: 50px;
 		height: 100%;
+		width: 100%;
+		gap: 100px;
+	}
+
+	.products, .categories, .info {
+		display: flex;
+		flex-direction: column;
+		height: 400px;
+	}
+
+	.categoryList, .productList {
+		margin: 0;
+		padding: 0;
+		width: 200px;
+		list-style: none;
+	}
+
+	li {
+		cursor: pointer;
+		padding: 10px 0;
 	}
 
 	.action {
+		display: none;
 		width: 200px;
 		height: 40px;
 		margin-bottom: 20px;
@@ -38,15 +59,28 @@
 		cursor: pointer;
 	}
 
-	.image {
-		width: 700px;
-		border-radius: 8px;
-	}
+
 </style>
 <body>
 	<div class="main">
-		<button class="action">Show image</button>
-		<img class="image" />
+		<div class="categories">
+			<h3>Categories</h3>
+			<ul class="categoryList">
+			</ul>
+		</div>
+
+		<div class="products">
+			<h3>Products</h3>
+			<ul class="productList"></ul>
+		</div>
+
+		<div class="info">
+			<h3>Product Info</h3>
+			<div class="productInfo">
+				<p class="infoText"></p>
+				<button class="action">Buy</button>
+			</div>
+		</div>
 	</div>
 	<script src="main.js"></script>
 </body>
