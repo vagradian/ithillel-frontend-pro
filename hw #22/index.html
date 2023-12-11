@@ -7,60 +7,58 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>homework #22</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			font-family: 'Open Sans', sans-serif;
+			background-image: url("https://i.redd.it/eo2hdnuqbzc51.png");
+		}
+
+		.main {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding-top: 50px;
+			height: 100%;
+			width: 100%;
+			gap: 100px;
+		}
+
+		.products, .categories, .info {
+			display: flex;
+			flex-direction: column;
+			height: 400px;
+		}
+
+		.categoryList, .productList {
+			margin: 0;
+			padding: 0;
+			width: 200px;
+			list-style: none;
+		}
+
+		li {
+			cursor: pointer;
+			padding: 10px 0;
+		}
+
+		.action {
+			display: none;
+			width: 200px;
+			height: 40px;
+			margin-bottom: 20px;
+			color: #ad0688;
+			font-size: 14px;
+			font-weight: bold;
+			background-color: rgba(232, 153, 199, 0.96);
+			border: 2px solid #ad0688;
+			border-radius: 8px;
+			cursor: pointer;
+		}
+	</style>
 </head>
-<style>
-	body {
-		margin: 0;
-		padding: 0;
-		height: 100vh;
-		font-family: 'Open Sans', sans-serif;
-		background-image: url("https://i.redd.it/eo2hdnuqbzc51.png");
-	}
-
-	.main {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding-top: 50px;
-		height: 100%;
-		width: 100%;
-		gap: 100px;
-	}
-
-	.products, .categories, .info {
-		display: flex;
-		flex-direction: column;
-		height: 400px;
-	}
-
-	.categoryList, .productList {
-		margin: 0;
-		padding: 0;
-		width: 200px;
-		list-style: none;
-	}
-
-	li {
-		cursor: pointer;
-		padding: 10px 0;
-	}
-
-	.action {
-		display: none;
-		width: 200px;
-		height: 40px;
-		margin-bottom: 20px;
-		color: #ad0688;
-		font-size: 14px;
-		font-weight: bold;
-		background-color: rgba(232, 153, 199, 0.96);
-		border: 2px solid #ad0688;
-		border-radius: 8px;
-		cursor: pointer;
-	}
-
-
-</style>
 <body>
 	<div class="main">
 		<div class="categories">
