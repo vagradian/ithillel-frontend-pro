@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>homework #25</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			height: 100vh;
+			font-family: 'Open Sans', sans-serif;
+			background-image: url("https://i.redd.it/eo2hdnuqbzc51.png");
+		}
+
+		.main {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding-top: 50px;
+			width: 100%;
+			gap: 20px;
+		}
+
+		label {
+			font-weight: 600;
+		}
+
+		input {
+			color: #ad0688;
+			background-color: transparent;
+			border: none;
+			border-bottom: 1px solid #ad0688;
+			outline: none;
+		}
+
+		.button {
+			align-self: center;
+			width: 150px;
+			padding: 8px;
+			color: #ad0688;
+			font-size: 14px;
+			font-weight: bold;
+			text-decoration: none;
+			text-align: center;
+			background-color: transparent;
+			border: 2px solid #ad0688;
+			border-radius: 8px;
+			cursor: pointer;
+
+			&:hover {
+				background-color: rgba(232, 153, 199, 0.96);
+			}
+		}
+
+		#postContainer {
+			width: 400px;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="main">
+		<label for="postIdInput">Enter id of the post (from 1 to 100): </label>
+		<input type="number" id="postIdInput" min="1" max="100">
+		<button class="button" id="searchButton">Find post</button>
+
+		<div id="postContainer" style="display: none;">
+			<h2>Founded post:</h2>
+			<div id="postContent"></div>
+			<button class="button" id="commentsButton">Get comments</button>
+			<div id="commentsContainer"></div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
