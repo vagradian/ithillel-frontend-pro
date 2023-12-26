@@ -26,22 +26,23 @@
 			gap: 100px;
 		}
 
-		.products, .categories, .info {
+		.products, .categories, .info, .actionOrders {
 			display: flex;
 			flex-direction: column;
 			height: 400px;
 		}
 
-		.categoryList, .productList {
+		.categoryList, .productList, .ordersList {
 			margin: 0;
 			padding: 0;
-			width: 200px;
+			width: 250px;
 			list-style: none;
 		}
 
 		li {
-			cursor: pointer;
+			display: flex;
 			padding: 10px 0;
+			cursor: pointer;
 		}
 
 		.action {
@@ -57,6 +58,17 @@
 			border-radius: 8px;
 			cursor: pointer;
 		}
+
+		.actionOrders, .actionDelete {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom:  0;
+			margin-left: 10px;
+			width: auto;
+			height: auto;
+		}
+
 	</style>
 </head>
 <body>
@@ -79,6 +91,13 @@
 				<button class="action">Buy</button>
 			</div>
 		</div>
+
+		<div class="ordersContainer" style="display: none;">
+			<h3>My Orders</h3>
+			<ul class="ordersList"></ul>
+		</div>
+
+		<button class="action actionOrders" id="myOrdersBtn">My Orders</button>
 	</div>
 	<script src="main.js"></script>
 </body>
